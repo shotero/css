@@ -74,7 +74,6 @@
     <samp>This is a sample output.</samp>
     <br />
     This is the <code>&lt;code&gt;</code> &amp; <kbd>kbd</kbd>
-    <br />
     <h3>Links &amp; navigation:</h3>
     <nav>
       <a href="#">Nav Link 1</a>
@@ -111,18 +110,21 @@
     <fieldset>
       <legend>This is a legend on fieldset</legend>
       <form>
-        <br />
-        <label>Label:</label>
-        <input type="text" placeholder="Text field" />
-        <br />
-        <label>Select box:</label>
-        <select>
-          <optgroup label="Option group">
-            <option>Option 1</option>
-            <option>Option 2</option>
-            <option>Option 3</option>
-          </optgroup>
-        </select>
+        <div>
+          <label>Label:</label>
+          <input type="text" placeholder="Text field" />
+        </div>
+        <div>
+          <label>Select box:
+            <select>
+              <optgroup label="Option group">
+                <option>Option 1</option>
+                <option>Option 2</option>
+                <option>Option 3</option>
+              </optgroup>
+            </select>
+          </label>
+        </div>
         <div>
           <label>Numeric Field:</label>
           <input type="number" placeholder="Number" value="0" />
@@ -211,5 +213,16 @@
         </tr>
       </tbody>
     </table>
+    <h1>Cards:</h1>
+    <div class="card">
+      <div class="header">
+        Card Header
+      </div>
+      <div class="body">
+        <p>Card Body</p>
+      </div>
+      <div class="footer">
+        <p>Card Footer</p>
+      </div>
   </body>
 </html>

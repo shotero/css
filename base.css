@@ -4,13 +4,29 @@
   --font-thin: 100;
   --font-regular: 400;
   --font-heavy: 700;
+
+  /* Modular scale */
+  --ratio: 1.5;
+  --s-5: calc(var(--s-4) / var(--ratio)); /* .13 */
+  --s-4: calc(var(--s-3) / var(--ratio)); /* .19 */
+  --s-3: calc(var(--s-2) / var(--ratio)); /* .29 */
+  --s-2: calc(var(--s-1) / var(--ratio)); /* .44 */
+  --s-1: calc(var(--s0) / var(--ratio)); /* .66 */
+  --s0: 1rem;
+  --s1: calc(var(--s0) * var(--ratio)); /* 1.5 */
+  --s2: calc(var(--s1) * var(--ratio)); /* 2.25 */
+  --s3: calc(var(--s2) * var(--ratio)); /* 3.38 */
+  --s4: calc(var(--s3) * var(--ratio)); /* 5.06 */
+  --s5: calc(var(--s4) * var(--ratio)); /* 7.59 */
+
+  /* font-size */
   --font-size: calc(1rem + 0.5vw);
-  --font-lineheight: calc(var(--font-size) * 1.75);
+  --font-lineheight: calc(var(--font-size) * var(--ratio));
 
   /* Spacing */
-  --border-radius: 0.25rem;
-  --padding-horizontal: 0.8rem;
-  --padding-vertical: 0.2rem;
+  --border-radius: var(--s-3);
+  --padding-horizontal: var(--s1);
+  --padding-vertical: var(--s-3);
 
   /* Animation */
   --transition-duration: 0.2s;
@@ -39,7 +55,7 @@
 }
 
 * + * {
-  margin-top: 1rem;
+  margin-top: var(--s0);
 }
 
 body {
@@ -93,7 +109,7 @@ p {
 
 blockquote {
   padding: 1.5rem 2rem;
-  border-left: 3px solid var(--color-lightGrey);
+  border-left: 3px solid var(--color-secondary);
 }
 
 dl dt {
@@ -126,11 +142,11 @@ th {
 }
 
 thead {
-  border-bottom: 2px solid var(--color-lightGrey);
+  border-bottom: 2px solid var(--color-secondary);
 }
 
 tfoot {
-  border-top: 2px solid var(--color-lightGrey);
+  border-top: 2px solid var(--color-secondary);
 }
 
 code,
@@ -171,7 +187,7 @@ img {
 }
 
 fieldset {
-  border: 1px solid var(--color-lightGrey);
+  border: 1px solid var(--color-secondary);
 }
 
 iframe {

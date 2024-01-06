@@ -1,6 +1,6 @@
 .card {
   .header {
-    background-color: #f1f1f1;
+    background-color: var(--color-secondary);
     padding: 10px;
     font-weight: bold;
   }
