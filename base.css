@@ -20,12 +20,12 @@
   --s5: calc(var(--s4) * var(--ratio)); /* 7.59 */
 
   /* font-size */
-  --font-size: calc(1rem + 0.5vw);
+  --font-size: calc(1rem + 0.2vw);
   --font-lineheight: calc(var(--font-size) * var(--ratio));
 
   /* Spacing */
   --border-radius: var(--s-3);
-  --padding-horizontal: var(--s1);
+  --padding-horizontal: var(--s-1);
   --padding-vertical: var(--s-3);
 
   /* Animation */
