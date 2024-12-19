@@ -4,20 +4,31 @@
   --font-thin: 100;
   --font-regular: 400;
   --font-heavy: 700;
+  --page-width: 60ch;
 
   /* Modular scale */
   --ratio: 1.5;
-  --s-5: calc(var(--s-4) / var(--ratio)); /* .13 */
-  --s-4: calc(var(--s-3) / var(--ratio)); /* .19 */
-  --s-3: calc(var(--s-2) / var(--ratio)); /* .29 */
-  --s-2: calc(var(--s-1) / var(--ratio)); /* .44 */
-  --s-1: calc(var(--s0) / var(--ratio)); /* .66 */
+  --s-5: calc(var(--s-4) / var(--ratio));
+  /* .13 */
+  --s-4: calc(var(--s-3) / var(--ratio));
+  /* .19 */
+  --s-3: calc(var(--s-2) / var(--ratio));
+  /* .29 */
+  --s-2: calc(var(--s-1) / var(--ratio));
+  /* .44 */
+  --s-1: calc(var(--s0) / var(--ratio));
+  /* .66 */
   --s0: 1rem;
-  --s1: calc(var(--s0) * var(--ratio)); /* 1.5 */
-  --s2: calc(var(--s1) * var(--ratio)); /* 2.25 */
-  --s3: calc(var(--s2) * var(--ratio)); /* 3.38 */
-  --s4: calc(var(--s3) * var(--ratio)); /* 5.06 */
-  --s5: calc(var(--s4) * var(--ratio)); /* 7.59 */
+  --s1: calc(var(--s0) * var(--ratio));
+  /* 1.5 */
+  --s2: calc(var(--s1) * var(--ratio));
+  /* 2.25 */
+  --s3: calc(var(--s2) * var(--ratio));
+  /* 3.38 */
+  --s4: calc(var(--s3) * var(--ratio));
+  /* 5.06 */
+  --s5: calc(var(--s4) * var(--ratio));
+  /* 7.59 */
 
   /* font-size */
   --font-size: calc(1rem + 0.2vw);
@@ -193,6 +204,7 @@ fieldset {
 iframe {
   border: 0;
 }
+
 fieldset {
   padding: 0.5rem 2rem;
 }
@@ -233,6 +245,7 @@ select {
 [type='reset'],
 [type='submit'],
 button {
+  width: 10ch;
   font-size: inherit;
   padding: var(--padding-vertical) var(--padding-horizontal);
   border: 1px solid var(--color-primary);
